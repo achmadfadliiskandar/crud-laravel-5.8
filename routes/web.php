@@ -37,3 +37,7 @@ Route::post('/pertanyaan/update','PertanyaanController@update');
 
 //untuk menghapus data
 Route::get('/pertanyaan/hapus/{id}','PertanyaanController@hapus');
+
+
+//dengan eloquent
+Route::resource('pertanyaan', 'PertanyaanController');
